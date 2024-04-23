@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body header{
+    background-image: url(bg/bg/bg1.webp);
+    height: 95vh;
+    background-position: center center;
+}
+
+body header nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    align-items: center;
+}
+
+body header nav .right{
+    display: flex;
+    gap: 32px;
+}
+
+body header nav .right a{
+    color: #9aca42;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+body header nav .right select{
+    background-color: rgba(240, 248, 255, 0.821);
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+body header .main1{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+body header .main1 .content{
+    color: white;
+    text-wrap: wrap;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px 220px;
+    font-weight: 500;
+}
+body header .main1 .button{
+    margin-top: 80px;
+}
+
+body header .main1 .button a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #9aca42;
+    border-radius: 15px;
+    font-family: Poppins;
+}
+
+body main .main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0px 220px;
+    gap: 50px;
+}
+
+body main .main2 .content1{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+
+body main .main2 .boxes{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr;
+    gap: 15px;
+}
+
+body main .main2 .boxes .box{
+    border: 2px solid #9aca42ab;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    scale: 0.95;
+}
+
+body main .main2 .boxes .box .intro1{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+body main .main2 .boxes .box .intro2{
+    font-size: 16px;
+}
+
+body .main3{
+    margin-top: 50px;
+}
+
+body .main3 .container1{
+    height: 600px;
+    background-image: url(bg/bg/bg2.webp);
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body .main3 .container1 .content2{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    padding: 0px 400px;
+    font-family: Poppins;
+    line-height: 55px;
+}
+
+body .main3 .container3{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 150px;
+    margin-top: 50px;
+}
+
+body .main3 .container3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+body .main3 .container3 .info{
+    margin-top: 30px;
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+@keyframes green_button {
+    to{
+        background-color: #46a390;
+    }
+}
+
+@keyframes right {
+    to{
+        color: white;
+    }
+}
+
+@keyframes green {
+    to{
+        color: #9aca42;
+    }
+}
+
+@keyframes zoom {
+    to{
+        scale: 1.1;
+    }
+}
+
+@keyframes zoom-2 {
+    to{
+        scale: 1.05;
+        background-color: rgba(250, 235, 215, 0.505);
+    }
+}
+
+body header .main1 .button a:hover{
+    animation: green_button 0.3s ease-in forwards;
+}
+
+body header nav .right a:hover{
+    animation: right 0.3s ease-in-out forwards;
+}
+
+body .main3 .container3 a:hover{
+    animation: green 0.2s ease-out forwards;
+}
+
+body header .main1 .button:hover{
+    animation: zoom 0.25s ease-in-out forwards;
+}
+
+body main .main2 .boxes .box:hover{
+    animation: zoom-2 0.3s ease-out forwards;
+}
+
+body .line{
+    width: 80vw;
+    margin: auto;
+    background-color: grey;
+    height: 2px;
+}
+
+body .main4{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 30px auto;
+    align-items: center;
+    text-align: center;
+}
+
+body .main4 .heading{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #9aca42;
+}
+
+body .main4 .detail{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Poppins;
+    margin: 50px 0px;
+}
+
+body .main4 .image{
+    display: grid;
+    width: 80vw;
+    margin: auto;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 0.5fr;
+}
+
+body .main4 .image img{
+    width: 500px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+body .main4 .image a{
+    margin: 15px 52px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Poppins;
+   
+}
+
+
+body .main4 .image a:hover{
+    color: #9aca42;
+}
+
+body .main4 .image img:hover{
+    animation: zoom-2 0.3s ease-in-out forwards;
+}
+
+body footer{
+    height: 170px;
+    background-color: #9aca42;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+body footer .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+body footer .left img:hover{
+    animation: zoom 0.3s forwards;
+}
+
+body footer .right .line{
+    height: 165px;
+    width: 1.5px;
+}
+
+body footer .right{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+}
+
+body footer .right .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+body footer .right .detail span{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+body footer .right .detail span a{
+    text-decoration: none;
+    color: black;
+}
+
+body footer .right .detail .head{
+    margin: 0px 0px 10px;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+body footer .right .detail .head img{
+    visibility: hidden;
+}
+
+body footer .right .detail .head:hover{
+    animation: zoom 0.3s forwards;
+}
+
+

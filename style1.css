@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body header{
+    background-image: url(bg/bg/bg2.webp);
+    height: 100vh;
+    background-position: top;
+}
+
+body header nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    align-items: center;
+}
+
+body header nav .right{
+    display: flex;
+    gap: 32px;
+}
+
+body header nav .right a{
+    color: #9aca42;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+body header nav .right select{
+    background-color: rgba(240, 248, 255, 0.821);
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+@keyframes right {
+    to{
+        color: white;
+    }
+}
+
+body header nav .right a:hover{
+    animation: right 0.3s ease-in-out forwards;
+}
+
+body header .grid{
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+    grid-template-columns: 3fr 3fr;
+    margin: 100px 220px;
+}
+
+body header .grid .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 70px;
+    background-color: rgba(240, 248, 255, 0.525);
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@keyframes darken {
+    to{
+        background-color: rgba(240, 248, 255, 0.692);
+        scale: 1.1;
+    }
+}
+
+body header .grid .box:hover{
+    animation: darken 0.3s ease-in-out forwards;
+}
